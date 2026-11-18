@@ -98,6 +98,7 @@ Problems you're likely to see:
 | Symptom | Likely cause and fix |
 |---|---|
 | Can't deploy: no `workers.dev` subdomain | New accounts need one. Wrangler asks for it on the first deploy. Any name works. |
+| Deploy button finished but there's no URL | Brand-new account with no `workers.dev` subdomain: the build can't ask for one. **Workers & Pages** > **Your subdomain**, pick any name, then the Worker's **Settings** > **Domains & Routes** > enable `workers.dev`. |
 | `npm install` fails on Node version | Node 22 or later is required. Use `nvm install 22`, or switch to the Deploy button and GitHub's web editor (press `.` on their repo). |
 | Locked-down laptop, no npm | Deploy button, then edit in GitHub's web editor. Every commit to `main` redeploys. |
 | The watchkeeper talks but never uses tools | Phase 3 not finished, or not deployed since. The chat header shows how many MCP tools it can see. |

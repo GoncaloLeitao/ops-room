@@ -40,7 +40,7 @@ Wrangler prints your URL, something like `https://ops-room.<your-subdomain>.work
 
 1. Click **Deploy to Cloudflare** above and log in to Cloudflare.
 2. Connect GitHub or GitLab. Cloudflare copies this repo into your account, then builds and deploys it. The defaults are fine.
-3. When it finishes, open your Worker's URL. That's your ops board.
+3. When it finishes, open your Worker's URL. That's your ops board. If there's no URL, your account has no `workers.dev` subdomain yet: the build can't ask you to pick one the way Wrangler does. Go to **Workers & Pages**, pick a subdomain next to **Your subdomain**, then on your Worker open **Settings** > **Domains & Routes** and enable `workers.dev`.
 4. To change the code, clone your new repo, edit, commit and `git push`. Every push to `main` redeploys in about a minute.
 
 Either way, open the ops board first and pick your role and callsign.

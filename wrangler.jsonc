@@ -3,6 +3,8 @@
   "name": "ops-room",
   "main": "src/index.ts",
   "compatibility_date": "2026-09-20",
+  // Serve the ops room on https://ops-room.<your-subdomain>.workers.dev.
+  "workers_dev": true,
   "compatibility_flags": [
     // The Agents SDK needs Node.js APIs.
     "nodejs_compat",

@@ -15,17 +15,17 @@
     </div>
 
     <header class="topbar">
-      <a class="sign" href="/">
-        <img src="/favicon.svg" alt="" />
+      <div class="sign">
+        <a href="/"><img src="/favicon.svg" alt="Ops board" /></a>
         <div>
-          <span class="sign-name">Exercise <b>Orange Cloud</b></span>
+          <a class="sign-name" href="/">Exercise <b>Orange Cloud</b></a>
           <div class="sign-sub">
             <span class="callsign" id="callsign">…</span>
             <span class="role" id="role" hidden></span>
-            <button class="btn ghost small" id="change-setup" hidden>Change</button>
+            <button class="btn ghost small" type="button" id="change-setup" hidden>Change</button>
           </div>
         </div>
-      </a>
+      </div>
       <div class="topbar-right">
         <span class="pill" id="status"><span class="dot"></span><span id="status-text">On the net</span></span>
         <span class="pill mono" id="clock" title="Date-time group, Zulu">------Z</span>

@@ -197,7 +197,8 @@ export class Exercise extends DurableObject<HubEnv> {
 
     for (const row of rows) {
       const snapshot = parse<Snapshot | null>(row.snapshot === null ? null : String(row.snapshot), null);
-      if (!snapshot) continue;
+      // A room that hasn't picked its role and callsign yet stays off the big screen.
+      if (!snapshot || snapshot.cell.setUp === false) continue;
       const okAt = Number(row.ok_at);
       const core = snapshot.missions.filter((m) => !m.bonus);
       const bonus = snapshot.missions.filter((m) => m.bonus && m.done);
